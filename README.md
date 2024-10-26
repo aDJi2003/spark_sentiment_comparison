@@ -34,17 +34,24 @@ A sentiment analysis project comparing tweets about two political figures—Trum
   <li><b>Dependecies</b>: See `requirements.txt` for the list of required Python packages.</li>
 </ul>
 
-<h2>Installation</h2>
-<b>Clone the Repository</b>
-```
+## Installation
+
+### 1. Clone the Repository
+Clone the repository and navigate into the project directory.
+
+```bash
 git clone https://github.com/aDJi2003/spark_sentiment_comparasion.git
 cd SentimentComparison
 ```
-<b>Build Docker Image</b>
-```
+
+### 2. Build the Docker Image
+Build the Docker image using the following command:
+```bash
 docker build -t sentiment_analysis_image .
 ```
-<b>Run the Docker Container</b>
-```
-docker run -it -v your_local_path sentiment_analysis_image
+
+### 3. Run the Docker Container
+Run the Docker Container, mounting your local path to the container using the following command:
+```bash
+docker run -it -v <your_local_path>:/sentiment_analysis sentiment_analysis_image
 ```
