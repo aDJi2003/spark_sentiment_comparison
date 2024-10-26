@@ -1,9 +1,7 @@
-#!/usr/bin/env python
 import sys
 
 sentiment_count = {}
 
-# Reducer
 for line in sys.stdin:
     line = line.strip()
     sentiment, count = line.split("\t")
