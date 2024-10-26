@@ -59,8 +59,8 @@ def show_popup(winner):
     print(winner)
 
 if __name__ == "__main__":
-    trump_summary = process_file("/sentiment_analysis/kamala_tweets.csv", "Trump")
-    kamala_summary = process_file("/sentiment_analysis/trump_tweets.csv", "Kamala")
+    trump_summary = process_file("sentiment_analysis/kamala_tweets.csv", "Trump")
+    kamala_summary = process_file("sentiment_analysis/trump_tweets.csv", "Kamala")
     plot_sentiment_distribution(trump_summary, kamala_summary) 
     winner = determine_winner(trump_summary, kamala_summary)
     show_popup(winner)
