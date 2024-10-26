@@ -1,0 +1,6 @@
+pandas
+pyspark
+matplotlib
+seaborn
+nltk
+pyarrow
